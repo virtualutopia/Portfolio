@@ -6,4 +6,7 @@ class PagesController < ApplicationController
   def portfolioPage
   end
 
+  def about
+  end
+
 end
