@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <%= javascript_include_tag "//code.jquery.com/jquery-latest.min.js" %>
+  <%= javascript_include_tag "//unslider.com/unslider.js" %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="header">
+    <div class="container menu">
+      <ul id="menu">
+        <li><%= link_to "About", '/' %></li>
+        <li>Work</li>          
+        <li>Contact</li>
+        <li> <%= link_to "Farid Anooshehpour", '/farid' %></li>
+      </ul>
+    </div>
+  </div>
+
+<%= yield %>
+
+  <div class="footer">
+    <div class="container">
+      <%= link_to "LinkedIn", 'https://www.linkedin.com/in/farid-anooshehpour' %>
+      <%= link_to "GitHub", 'https://github.com/virtualutopia?tab=repositories' %>
+      <p class="float-right">&copy; FaridAP 2020</p>
+    </div>
+  </div>
+
+</body>
+</html>
